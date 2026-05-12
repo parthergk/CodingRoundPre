@@ -20,10 +20,17 @@ const output = sales.reduce((acc, item) => {
 
   acc[key].totalSales += item.amount;
   if (item.amount > acc[key].maxSale) {
-    acc[key].maxSale = item.amount
-    acc[key].topEmployee = item.employee
+    acc[key].maxSale = item.amount;
+    acc[key].topEmployee = item.employee;
   }
-   return acc
+  return acc;
 }, {});
 
-console.log("output", Object.keys(output));
+console.log(
+  "output",
+  Object.keys(output).map((region) => ({
+    region,
+    totalSales: output[region].totalSales,
+    maxSale: output[region].maxSale,
+  })),
+);
