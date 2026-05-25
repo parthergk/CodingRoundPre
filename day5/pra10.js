@@ -1,3 +1,31 @@
+/**
+ * 28. Department Sales Metrics and Top Performer
+ * 
+ * Problem Description:
+ * Given an array of sales records where each record contains `employee`, `department`, and sales `amount`.
+ * Group these records by `department`. For each department, calculate:
+ * 1. `totalSales`: The total sum of sale amounts in that department.
+ * 2. `topPerformer`: The employee name with the single highest sale amount in that department.
+ * Return an array of objects representing these department metrics.
+ * 
+ * Example 1:
+ * Input:
+ * sales = [
+ *   { employee: "Gaurav", department: "Engineering", amount: 5000 },
+ *   { employee: "Rahul", department: "HR", amount: 3000 },
+ *   { employee: "Amit", department: "Engineering", amount: 7000 },
+ *   { employee: "Neha", department: "Design", amount: 4000 },
+ *   { employee: "Riya", department: "Engineering", amount: 2000 }
+ * ]
+ * Output: [
+ *   { item: "Engineering", totalSales: 14000, topPerformer: "Amit" },
+ *   { item: "HR", totalSales: 3000, topPerformer: "Rahul" },
+ *   { item: "Design", totalSales: 4000, topPerformer: "Neha" }
+ * ]
+ * 
+ * Constraints:
+ * - Each sales record contains `employee` (string), `department` (string), and `amount` (number).
+ */
 const sales = [
   { employee: "Gaurav", department: "Engineering", amount: 5000 },
   { employee: "Rahul", department: "HR", amount: 3000 },
