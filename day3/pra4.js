@@ -1,3 +1,24 @@
+/**
+ * 14. Fetch and Aggregate Completed Todos
+ * 
+ * Problem Description:
+ * Implement an asynchronous function `getData` that fetches todos from the API
+ * endpoint `https://jsonplaceholder.typicode.com/todos`.
+ * Filter out todos where `completed === true`.
+ * Return an object containing:
+ * 1. `totalCompleted`: The count of completed todos.
+ * 2. `completedTitles`: An array containing only the titles of completed todos.
+ * 
+ * Example:
+ * Input (from API): Array of todo objects
+ * Output: {
+ *   totalCompleted: 90,
+ *   completedTitles: ["delectus aut autem", "quis ut nam facilis...", ...]
+ * }
+ * 
+ * Constraints:
+ * - Return an empty object or handle error in the catch block if the request fails.
+ */
 async function getData() {
     try {
         const resp = await fetch("https://jsonplaceholder.typicode.com/todos");
