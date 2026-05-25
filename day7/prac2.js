@@ -1,3 +1,19 @@
+/**
+ * 33. Find All Duplicate Numbers
+ * 
+ * Problem Description:
+ * Given an array of integers, find all numbers that appear more than once in the array.
+ * Implement the solution in two ways:
+ * 1. Using a frequency count object.
+ * 2. Using a `Set` to track visited numbers.
+ * 
+ * Example 1:
+ * Input: nums = [1, 2, 3, 2, 4, 5, 1]
+ * Output (Duplicates): [1, 2]
+ * 
+ * Constraints:
+ * - The input array contains integers.
+ */
 const nums = [1, 2, 3, 2, 4, 5, 1];
 
 const obj = {};
