@@ -6,9 +6,12 @@ const todos = [
 const targetId = 1;
 
 const output = todos.map(item => {
+    if (item.id === targetId) {
     return {
-        ...item,
-        completed: (item.completed || !item.completed)
+            ...item,
+            completed: !item.completed
+        }
     }
+    return item
 })
 console.log("Output", output);
